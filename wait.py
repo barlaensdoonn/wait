@@ -68,7 +68,6 @@ class Wait:
 
     def _is_future(self, next_time):
         '''check that next_time is in the future'''
-
         if next_time > datetime.now():
             return next_time
         else:
