@@ -2,7 +2,7 @@
 versatile class for pausing a program until some time in the future
 
 ### usage
-`
+```
 from wait import wait
 waiter = Wait()
 waiter.wait_til(30)                   # sleep for 30 seconds
@@ -14,6 +14,6 @@ today = datetime.today()
 tomorrow = today + timedelta(days=1)
 tomorrow = tomorrow.replace(hour=12, minute=0, second=0, microsecond=0)
 waiter.wait_til(tomorrow)             # sleep til 12PM tomorrow
-`
+```
 
 all times passed to wait_til() must be in the future
